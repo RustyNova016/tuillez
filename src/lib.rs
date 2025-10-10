@@ -1,12 +1,12 @@
+pub mod error;
 #[cfg(feature = "extensions")]
 pub mod extensions;
+pub mod fatal_error;
+pub mod formatter;
 pub mod macros;
 pub mod styles;
 pub mod tracing_utils;
 pub mod utils;
-pub mod error;
-pub mod fatal_error;
-pub mod formatter;
 
 pub use crate::error::Error;
 pub use crate::styles::SPINNER_STYLE;
