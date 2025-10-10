@@ -1,0 +1,22 @@
+[repository.tuillez]
+path="./"
+default_branch="master"
+
+    [repository.tuillez.release]
+    git_cliff = true
+
+    [repository.tuillez.rust]
+    fmt = true
+    clippy_hack = true
+    sqlx = false
+
+    [repository.tuillez.rust.ci]
+    fmt = true
+    doc = true
+    clippy = true
+    test = true
+    nextest = false
+    msrv = true
+    machete = true
+    semver = false
+    # min_versions = true
