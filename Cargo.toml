@@ -3,6 +3,11 @@ name = "tuillez"
 version = "0.1.0"
 edition = "2021"
 rust-version = "1.85.1"
+authors = ["RustyNova"]
+license = "MIT OR AGPL-3.0-or-later"
+keywords = ["tui", "logging", "error management"]
+repository = "https://github.com/RustyNova016/tuillez"
+description = "Utilities for logging and cli printing"
 
 [dependencies]
 color-backtrace = {git = "https://github.com/RustyNova016/color-backtrace.git", branch = "example", default-features = false, features = ["use-btparse-crate"]}
@@ -46,3 +51,6 @@ suboptimal_flops= { level = "warn", priority = 1 }
 # Won't apply... Yet
 must_use_candidate = { level = "allow", priority = 1 }
 map_unwrap_or = { level = "allow", priority = 1 }
+
+[package.metadata.docs.rs]
+cargo-args = ["-Zunstable-options", "-Zrustdoc-scrape-examples"]
