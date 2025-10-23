@@ -16,3 +16,7 @@ pub use owo_colors::OwoColorize;
 pub mod tracing_indicatif {
     pub use tracing_indicatif::*;
 }
+
+pub mod reexports {
+    pub use async_trait::async_trait;
+}
